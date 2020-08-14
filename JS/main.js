@@ -162,7 +162,7 @@ console.log(p2.getBirthYear());
 
 
 //DOM Manipulation
-console.log(document.getElementById('my-form'));
+/*console.log(document.getElementById('my-form'));
 console.log(document.querySelector('.container'));
 console.log(document.querySelectorAll('.item'));
 console.log(document.getElementsByClassName('item'));
@@ -173,7 +173,7 @@ const items = document.querySelectorAll('.item');
 items.forEach((item) => console.log(item));
 
 const ul = document.querySelector('.items');
-ul.remove();
+ul.remove();*/
 
 /*const btn = document.querySelector('.btn');
 btn.addEventListener('click', (e) => {
@@ -183,7 +183,7 @@ btn.addEventListener('click', (e) => {
     document.querySelector('#my-form').style.background = '#ccc';
 });*/
 
-const myForm = document.querySelector('#my-form');
+/*const myForm = document.querySelector('#my-form');
 const nameField = document.querySelector('#name');
 const msg = document.querySelector('.msg');
 myForm.addEventListener('submit', onSubmit);
@@ -200,4 +200,4 @@ function onSubmit(e) {
     } else {
         console.log('success');
     }
-}
+}*/
