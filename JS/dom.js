@@ -48,3 +48,34 @@ console.log(lastItem);
 var itemList = document.querySelectorAll('.list-group-item'); //Class name - to be referred with .
 console.log(itemList);
 
+//Traversing the DOM
+var itemListForDOM = document.querySelector('#items');
+console.log(itemListForDOM.parentNode);
+itemListForDOM.parentNode.style.backgroundColor = "#f4f4f4";
+
+console.log(itemListForDOM.parentElement);
+
+console.log(itemListForDOM.childNodes);//Whitespaces included
+console.log(itemListForDOM.children);//Whitespaces not included
+console.log(itemListForDOM.firstChild);//Whitespaces included
+console.log(itemListForDOM.firstElementChild);//Whitespaces not included
+
+console.log(itemListForDOM.nextSibling);//Whitespaces included
+console.log(itemListForDOM.nextElementSibling);//Whitespaces not included
+
+console.log(itemListForDOM.previousSibling);//Whitespaces included
+console.log(itemListForDOM.previousElementSibling);//Whitespaces not included
+
+//Create Element
+var newDiv = document.createElement('div');
+newDiv.className = 'hello';
+newDiv.id = 'hello1';
+newDiv.setAttribute('title', 'Hello Div');
+var newDivText = document.createTextNode('Hello World');
+newDiv.appendChild(newDivText);
+console.log(newDiv);
+
+//Add it to the DOM
+var container = document.querySelector('header .container');
+var h1 = document.querySelector('header h1');
+container.insertBefore(newDiv, h1);
