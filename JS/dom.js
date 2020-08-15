@@ -79,3 +79,19 @@ console.log(newDiv);
 var container = document.querySelector('header .container');
 var h1 = document.querySelector('header h1');
 container.insertBefore(newDiv, h1);
+
+
+//Event
+/*var button = document.getElementById("button").addEventListener('click' , (e) => {
+    console.log('Clicked');
+})*/
+var button = document.getElementById("button").addEventListener('click', buttonClick);
+
+function buttonClick(e) {
+    console.log(e);
+    console.log(e.target);
+    console.log(e.target.id);
+    console.log(e.target.className);
+    console.log(e.target.classList);
+    document.getElementById('header-title').textContent = 'Changed';
+}
